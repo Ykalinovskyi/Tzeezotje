@@ -1,0 +1,26 @@
+.header {
+    position: absolute;
+    top: 50px;
+    width: 100%;
+
+    & .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media(max-width: $tablet-xs) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media(max-width: $tablet) {
+        top: 0;
+    }
+
+    @media(max-width: $tablet-xs) {
+        position: static;
+        background-color: $dark-blue;
+        padding-top: 20px;
+    }
+}

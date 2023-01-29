@@ -1,0 +1,39 @@
+.socials {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.socials--item {
+    width: 48px;
+    height: 48px;
+    border: 1px solid $white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in ;
+
+    &:hover,
+    &:hover a,
+    &:focus-within,
+    &:focus-within a {
+        border-color: $gold;
+        color: $gold;
+    }
+}
+
+.socials--link {
+    color: $white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    outline: none;
+
+    transition: color 0.3s ease-in;
+}

@@ -1,0 +1,22 @@
+.button {
+    display: block;
+    cursor: pointer;
+    text-decoration: none;
+    color: $white;
+   
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    transition: all .3s ease-in;
+    outline: none;
+
+    &_blue {
+        background-color: $dark-blue;
+    }
+
+    &:hover,
+    &:focus {
+        color: $gold;
+        background-color: darken($color: $dark-blue, $amount: 2);
+    }
+}

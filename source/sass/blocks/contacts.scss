@@ -1,0 +1,45 @@
+.contacts {
+    font-style: normal;
+
+    @media(max-width: $tablet) {
+        order: 2;
+    }
+
+    @media(max-width: $tablet-xs) {
+        order: 3;
+        grid-column: 1/-1;;
+        justify-self: center;
+    }
+}
+
+.contacts--link {
+    color: $white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    padding: 24px 0;
+    transition: all .3s ease-in;
+
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        color: $gold;
+    }
+    &:focus {
+        outline-color: $gold;
+    }
+
+    @media(max-width: $tablet-xs) {
+        font-size: 24px;   
+    }
+}
+
+.contacts--icon {
+    margin-right: 11px;
+
+    @media(max-width: $tablet-xs) {
+        
+    }
+}

@@ -1,0 +1,20 @@
+.logo {
+    text-decoration: none;
+    transition: opacity .3s ease-in;
+
+    &:focus {
+        outline-color: $gold;
+    }
+
+    &:hover {
+        opacity: .8;
+    }
+
+}
+
+.logo--img {
+    @media(max-width: $tablet) {
+        width: 240px;
+        height: 45px;
+    }
+}
